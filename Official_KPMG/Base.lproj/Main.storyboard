@@ -1,25 +1,497 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8bc-oN-VJj">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="RHPHomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kpmg_banner_whitespace.png" translatesAutoresizingMaskIntoConstraints="NO" id="pnb-eW-kE5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kpmg_banner.png" translatesAutoresizingMaskIntoConstraints="NO" id="mVX-YW-XKZ">
+                                <rect key="frame" x="0.0" y="20" width="320" height="78"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kpmg_sidebanner.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Dv-b8-Kwf">
+                                <rect key="frame" x="0.0" y="98" width="57" height="420"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Overview" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ql-jM-ZlZ">
+                                <rect key="frame" x="65" y="106" width="241" height="21"/>
+                                <color key="backgroundColor" red="0.0" green="0.02493943800737905" blue="0.59264605978260865" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="241" translatesAutoresizingMaskIntoConstraints="NO" id="YQ0-5g-e7i">
+                                <rect key="frame" x="65" y="124" width="241" height="104"/>
+                                <string key="text">KPMG provides audit, tax &amp; advisory services. We work closely with our clients, helping them to mitigate risks and grasp opportunities. With a worldwide presence, We continue to build our member firms' successes thanks to clear vision, rigorously maintained values and, above all, its people.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="11"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Performance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qC5-iI-7Jl">
+                                <rect key="frame" x="54" y="230" width="252" height="21"/>
+                                <color key="backgroundColor" red="0.0" green="0.0361534154" blue="0.62062669839999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="252" translatesAutoresizingMaskIntoConstraints="NO" id="cNL-lH-vfd">
+                                <rect key="frame" x="54" y="256" width="252" height="56"/>
+                                <string key="text">The KPMG network achieved record-high global revenues of USD 23.42 billion for the 2013 fiscal year, recording growth across Audit, Tax and Advisory functions and key industries.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="11"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Clients" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qI-2B-jfZ">
+                                <rect key="frame" x="48" y="322" width="258" height="21"/>
+                                <color key="backgroundColor" red="0.0" green="0.0361534154" blue="0.62062669839999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="258" translatesAutoresizingMaskIntoConstraints="NO" id="Rue-AX-OrD">
+                                <rect key="frame" x="48" y="346" width="258" height="69"/>
+                                <string key="text">When you join KPMG, you will have the opportunity to work on the big stage. We work with many of the world's most famous, innovative and successful organizations.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="11"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Culture/Talent" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBP-yc-7Hy">
+                                <rect key="frame" x="40" y="418" width="124" height="21"/>
+                                <color key="backgroundColor" red="0.0" green="0.0361534154" blue="0.62062669839999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We are committed to supporting our people to reach their full potential" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="124" translatesAutoresizingMaskIntoConstraints="NO" id="Yny-eM-UBb">
+                                <rect key="frame" x="40" y="429" width="124" height="83"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="11"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Structure" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlK-Tz-8wP">
+                                <rect key="frame" x="179" y="418" width="127" height="21"/>
+                                <color key="backgroundColor" red="0.0" green="0.0361534154" blue="0.62062669839999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KPMG International is a Swiss entity. It is the coordinating entity for a global network of independent firms." lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="127" translatesAutoresizingMaskIntoConstraints="NO" id="BKe-Ap-jOi">
+                                <rect key="frame" x="179" y="442" width="127" height="70"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="11"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home.png" id="eUD-St-l2E"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138" y="-537"/>
+        </scene>
+        <!--News View Controller-->
+        <scene sceneID="FXo-mM-AlD">
+            <objects>
+                <tableViewController id="Pf2-oI-zLG" customClass="RHPNewsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="85" sectionHeaderHeight="10" sectionFooterHeight="10" id="VG9-V0-ERg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewsCell" rowHeight="85" id="N0q-Vw-7Vt" customClass="RHPNewsViewCell">
+                                <rect key="frame" x="0.0" y="119" width="320" height="85"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" tableViewCell="N0q-Vw-7Vt" id="70o-1P-fI4">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="84"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Headline" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="223" translatesAutoresizingMaskIntoConstraints="NO" id="jx4-cH-sFL">
+                                            <rect key="frame" x="7" y="0.0" width="223" height="84"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="49" translatesAutoresizingMaskIntoConstraints="NO" id="fJE-ZH-yYS">
+                                            <rect key="frame" x="238" y="0.0" width="49" height="84"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="Date" destination="fJE-ZH-yYS" id="Rgx-8f-tAr"/>
+                                    <outlet property="Headline" destination="jx4-cH-sFL" id="lwQ-K1-kHb"/>
+                                    <segue destination="xno-PT-jNP" kind="push" identifier="NewsToDetail" id="5Gd-lh-wqC"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Pf2-oI-zLG" id="0pA-18-ING"/>
+                            <outlet property="delegate" destination="Pf2-oI-zLG" id="vwM-1H-zRL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="qCq-0X-2mw"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZrX-qN-DR8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="143"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="BW8-o5-eth">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="8bc-oN-VJj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="3KK-G6-CxZ">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="U9j-jt-bZ8"/>
+                        <segue destination="AE6-Qb-9jn" kind="relationship" relationship="viewControllers" id="g6r-11-uom"/>
+                        <segue destination="A3Z-0B-pOh" kind="relationship" relationship="viewControllers" id="7VB-Ti-qyo"/>
+                        <segue destination="j3m-uG-OWe" kind="relationship" relationship="viewControllers" id="Y0d-wK-DR8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wyb-69-Wa1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-402" y="349"/>
+        </scene>
+        <!--Events View Controller-->
+        <scene sceneID="928-mC-hz8">
+            <objects>
+                <tableViewController id="n5o-Ob-73z" customClass="RHPEventsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="76" sectionHeaderHeight="22" sectionFooterHeight="22" id="j9w-kH-9dV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EventsCell1" rowHeight="76" id="4fJ-Ds-6gH">
+                                <rect key="frame" x="0.0" y="86" width="320" height="76"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4fJ-Ds-6gH" id="rat-vP-7oG">
+                                    <rect key="frame" x="0.0" y="0.0" width="253" height="75"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="USC: KPMG will be at the career fair February 4" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="175" translatesAutoresizingMaskIntoConstraints="NO" id="Cf5-4u-0H9">
+                                            <rect key="frame" x="78" y="0.0" width="175" height="75"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="event1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZBg-jq-oOr">
+                                            <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="R8X-2D-KXd" kind="push" identifier="Event1ToDetail" trigger="accessoryAction" id="cS2-JV-5RF"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EventsCell2" rowHeight="76" id="m3w-je-i42">
+                                <rect key="frame" x="0.0" y="162" width="320" height="76"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m3w-je-i42" id="Nub-Oh-9ZE">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="USC: KPMG will be at the career fair February 4" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="231" translatesAutoresizingMaskIntoConstraints="NO" id="GYV-Md-rpH">
+                                            <rect key="frame" x="83" y="0.0" width="231" height="75"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="event1.png" translatesAutoresizingMaskIntoConstraints="NO" id="twM-w0-UML">
+                                            <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EventsCell3" rowHeight="76" id="v8V-bP-Mfi">
+                                <rect key="frame" x="0.0" y="238" width="320" height="76"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v8V-bP-Mfi" id="3Xd-qY-H1d">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="USC: KPMG will be at the career fair February 4" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="231" translatesAutoresizingMaskIntoConstraints="NO" id="FcM-yt-ZkB">
+                                            <rect key="frame" x="83" y="0.0" width="231" height="75"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="event1.png" translatesAutoresizingMaskIntoConstraints="NO" id="UVx-kB-HnZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EventsCell4" rowHeight="76" id="7BG-VH-j3G">
+                                <rect key="frame" x="0.0" y="314" width="320" height="76"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7BG-VH-j3G" id="9cu-Tu-cUk">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="USC: KPMG will be at the career fair February 4" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="231" translatesAutoresizingMaskIntoConstraints="NO" id="Yof-kv-dn5">
+                                            <rect key="frame" x="83" y="0.0" width="231" height="75"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="event1.png" translatesAutoresizingMaskIntoConstraints="NO" id="p6c-eY-35m">
+                                            <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EventsCell5" rowHeight="76" id="qtQ-YN-zMC">
+                                <rect key="frame" x="0.0" y="390" width="320" height="76"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qtQ-YN-zMC" id="Zde-mj-kCV">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="USC: KPMG will be at the career fair February 4" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="231" translatesAutoresizingMaskIntoConstraints="NO" id="wRU-76-LpO">
+                                            <rect key="frame" x="83" y="0.0" width="231" height="75"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="event1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Aro-Nl-xQX">
+                                            <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EventsCell6" rowHeight="76" id="cKM-K3-o7D">
+                                <rect key="frame" x="0.0" y="466" width="320" height="76"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cKM-K3-o7D" id="hLv-wo-wak">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="USC: KPMG will be at the career fair February 4" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="231" translatesAutoresizingMaskIntoConstraints="NO" id="Mpr-Jd-TQk">
+                                            <rect key="frame" x="83" y="0.0" width="231" height="75"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="event1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xwx-Jh-tPr">
+                                            <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="n5o-Ob-73z" id="F0H-0B-1S6"/>
+                            <outlet property="delegate" destination="n5o-Ob-73z" id="u9v-gc-1nW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="c9w-aC-2w8"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a5p-8H-WeM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="839"/>
+        </scene>
+        <!--News Detail View Controller-->
+        <scene sceneID="Gsv-CG-IBB">
+            <objects>
+                <viewController id="xno-PT-jNP" customClass="RHPNewsDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m9n-k7-Xnp"/>
+                        <viewControllerLayoutGuide type="bottom" id="zw6-m2-LcG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rW7-vt-igB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Kg-Nv-Xlm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="xno-PT-jNP" id="Mfi-ht-lJt"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="h0g-72-0h5">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                                <color key="color" red="0.0" green="0.0361534154" blue="0.62062669839999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7Kg-Nv-Xlm" secondAttribute="trailing" id="JZq-pM-QpW"/>
+                            <constraint firstAttribute="centerX" secondItem="h0g-72-0h5" secondAttribute="centerX" id="LXC-eY-Gvs"/>
+                            <constraint firstItem="7Kg-Nv-Xlm" firstAttribute="top" secondItem="rW7-vt-igB" secondAttribute="top" id="ac7-7U-TlB"/>
+                            <constraint firstAttribute="bottom" secondItem="7Kg-Nv-Xlm" secondAttribute="bottom" id="feJ-Yh-VbM"/>
+                            <constraint firstAttribute="centerY" secondItem="h0g-72-0h5" secondAttribute="centerY" id="haS-34-cqd"/>
+                            <constraint firstItem="7Kg-Nv-Xlm" firstAttribute="leading" secondItem="rW7-vt-igB" secondAttribute="leading" id="zTf-7M-hPk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bIv-ff-GsW"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="h0g-72-0h5" id="ldh-Qc-oIR"/>
+                        <outlet property="webView" destination="7Kg-Nv-Xlm" id="BlD-Oc-EDA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fo8-cb-Lha" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1241" y="143"/>
+        </scene>
+        <!--RSS-->
+        <scene sceneID="fXy-XL-lMQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AE6-Qb-9jn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="RSS" image="rss.png" id="z9d-Mr-gqq"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XJA-tV-Qwf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Pf2-oI-zLG" kind="relationship" relationship="rootViewController" id="X58-t3-47p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l4u-xH-uAN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="143"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="LXO-Ng-M2A">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A3Z-0B-pOh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Events" image="events.png" id="rqD-Rc-s2Q"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uqU-qn-t9b">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="n5o-Ob-73z" kind="relationship" relationship="rootViewController" id="3Ee-Be-E0i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6em-7c-lTl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="839"/>
+        </scene>
+        <!--Location VIew Controller-->
+        <scene sceneID="ZeO-YE-NvK">
+            <objects>
+                <viewController id="j3m-uG-OWe" userLabel="Location VIew Controller" customClass="RHPLocationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dTd-qP-2Ub"/>
+                        <viewControllerLayoutGuide type="bottom" id="TWL-cO-GdO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bbc-lz-nOU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QHF-qp-1aC" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="146" width="320" height="373"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w2i-Zg-00v">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Locations" image="locations.png" id="pai-6f-xMh"/>
+                    <connections>
+                        <outlet property="mapView" destination="QHF-qp-1aC" id="QGr-zT-AfM"/>
+                        <outlet property="pickerView" destination="w2i-Zg-00v" id="shu-iK-JiR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M9w-ni-3Bg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="1536"/>
+        </scene>
+        <!--News Detail View Controller-->
+        <scene sceneID="Hrv-xX-LTi">
+            <objects>
+                <viewController id="R8X-2D-KXd" customClass="RHPNewsDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZXx-Xr-Dou"/>
+                        <viewControllerLayoutGuide type="bottom" id="N9x-Ur-Q2O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0bI-QP-vob">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZSc-EJ-bkH" customClass="RHPEventdetailViewController">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="R8X-2D-KXd" id="Xg1-FF-O0K"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="f4s-6c-WBw">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                                <color key="color" red="0.0" green="0.0361534154" blue="0.62062669839999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZSc-EJ-bkH" firstAttribute="leading" secondItem="0bI-QP-vob" secondAttribute="leading" id="2DH-0o-rm1"/>
+                            <constraint firstItem="ZSc-EJ-bkH" firstAttribute="top" secondItem="0bI-QP-vob" secondAttribute="top" id="F9W-Pg-4qG"/>
+                            <constraint firstAttribute="trailing" secondItem="ZSc-EJ-bkH" secondAttribute="trailing" id="UzL-Gq-3xZ"/>
+                            <constraint firstAttribute="bottom" secondItem="ZSc-EJ-bkH" secondAttribute="bottom" id="dUk-b8-Mb7"/>
+                            <constraint firstAttribute="centerX" secondItem="f4s-6c-WBw" secondAttribute="centerX" id="ece-Vd-eRr"/>
+                            <constraint firstAttribute="centerY" secondItem="f4s-6c-WBw" secondAttribute="centerY" id="qUh-4L-zz0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7Kv-yp-h0P"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="f4s-6c-WBw" id="sRg-wq-dt9"/>
+                        <outlet property="webView" destination="ZSc-EJ-bkH" id="LX7-sc-XVF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KZW-lI-fDC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1241" y="839"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PQS-2c-6rI">
+            <objects>
+                <viewController id="gZ3-Q2-GSN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v45-7u-UC4"/>
+                        <viewControllerLayoutGuide type="bottom" id="bk2-Kf-MyD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iJE-0c-E5K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TSn-Wf-jBV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="event1.png" width="75" height="75"/>
+        <image name="events.png" width="25" height="25"/>
+        <image name="home.png" width="25" height="25"/>
+        <image name="kpmg_banner.png" width="318" height="78"/>
+        <image name="kpmg_banner_whitespace.png" width="634" height="20"/>
+        <image name="kpmg_sidebanner.png" width="296" height="540"/>
+        <image name="locations.png" width="25" height="25"/>
+        <image name="rss.png" width="25" height="25"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
